@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="14dp"
+    tools:context="com.example.android.newsreport.NewsActivity">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            style="@style/TextViewStyle"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            tools:text="News Title Text View" />
+
+        <TextView
+            android:id="@+id/section_name_text_view"
+            style="@style/TextViewStyle"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            tools:text="Section Name Text View" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/date_text_view"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Date Text View" />
+
+        <TextView
+            android:id="@+id/time_text_view"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Time Text View" />
+    </LinearLayout>
+</LinearLayout>
